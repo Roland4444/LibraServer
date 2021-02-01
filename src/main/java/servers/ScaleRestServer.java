@@ -10,7 +10,7 @@ public class ScaleRestServer {
         ScaleServer sc = new ScaleServer();
 
         get("/get/:id", (request, response) -> {
-            return sc.getScale(request.params(":id")).getWeigth();
+            return sc.getWeigth(request.params(":id"));
         });
 
     }
